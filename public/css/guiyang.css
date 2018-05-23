@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+    outline: none;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+body{
+    width: 100%;
+    height:100%;
+    overflow: auto;
+}
+@media screen and (min-width: 1900px) {
+    body {
+        overflow: hidden;
+    }
+    .bg{
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+}
+@media screen and (max-width: 1900px) {
+    body {
+        width: 1920px;
+        overflow: auto;
+    }
+}
+.bg{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left:0;*/
+    /*right:0;*/
+    /*bottom:0;*/
+    width:100%;
+    height: 100%;
+    background: url(../assets/bg.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.header{
+    height:80px;
+    line-height:80px;
+    color: #10ddd0;
+}
+.header h1{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 30px;
+}
+.header .time{
+    float: right;
+    width:330px;
+    font-size:20px;
+    font-weight: bold;
+}
+.container{
+    height:1000px;
+    width:100%;
+    padding: 20px;
+}
+.container .top{
+    height: 535px;
+}
+.blk{
+    padding:25px;
+}
+.item1.blk,.item2.blk{
+    padding-top:40px;
+}
+.blk .top-half{
+    height: 40%;
+}
+.blk .bottom-half{
+    height: 60%;
+}
+.item4.blk .bottom-half{
+    padding-left:30px;
+    padding-top:20px;
+}
+.item5.blk .bottom-half{
+    padding-top:20px;
+}
+.bottom-half .chart{
+    height: 240px;
+    width: 100%;
+    margin-top: 20px;
+}
+.item .bottom-half .chart{
+    height: 200px;
+}
+.item5.item .bottom-half .chart{
+    margin-top:0;
+}
+.item4 .bottom-half .chart{
+    margin-top: 10px;
+}
+.item2 .bottom-half .chart{
+    height: 260px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.top-half .data{
+    height: 140px;
+    padding: 30px 18px 18px 18px;
+}
+.data img{
+    width:70px;
+    height:80px;
+}
+.item .data img{
+    width:64px;
+    height:64px;
+}
+.item6 .data img{
+    width:84px;
+    height:64px;
+}
+.item1 .data img{
+    width:56px;
+}
+.data dl{
+    display: inline-block;
+    width:196px;
+    padding-left: 20px;
+    font-size: 20px;
+    color:#0099ff;
+}
+.item .data dl{
+    width:220px;
+}
+.item5.item .data dl{
+    width:140px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.data dl dt{
+    margin-bottom: 8px;
+}
+.data dl dd{
+    font-size: 30px;
+    color:#0fc3bd;
+}
+.item1 .data dl dd,.item2 .data dl dd{
+    font-size: 36px;
+}
+dd span.to-top{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.blk .title{
+    font-size: 20px;
+    color:#0099ff;
+}
+.title2{
+    font-size: 16px;
+    color:#0099ff;
+}
+.title2.title3{
+    margin-left: 20px;
+}
+.blk .title:before{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 24px;
+    top:4px;
+    margin-right: 10px;
+    background-color: #1fced2;
+}
+.blk.item1{
+    float:left;
+    width: 29%;
+    height:100%;
+    margin-right: 1%;
+    background: url("../assets/item1.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.blk.item2{
+    float:left;
+    width: 70%;
+    height:100%;
+    background: url("../assets/item2.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.blk.item2 .half{
+    float: left;
+    width:50%;
+}
+.half .table{
+    height: 410px;
+    padding:0px 20px 0 20px;
+    margin-top:30px;
+    overflow:hidden;
+}
+.half .table>table{
+    margin-bottom:6px;
+}
+.half .table #table{
+    height: 360px;
+    width:100%;
+    overflow:hidden;
+}
+.table table{
+    border-collapse:collapse;
+    table-layout: fixed;
+    width:100%;
+    border-width: 0;
+}
+.table table th{
+    height: 30px;
+    width:18%;
+    font-size: 16px;
+    text-align: left;
+    color: #0099ff;
+    border-width: 0;
+}
+.table table thead th:nth-child(1),.table table thead th:nth-child(2),.table table tr td:nth-child(1),.table table tr td:nth-child(2){
+    width:23%;
+}
+
+.table table td{
+    height: 36px;
+    width:18%;
+    font-size: 16px;
+    text-align: left;
+    color: #0099ff;
+    border-width: 0;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.table table tr{
+    border-width: 0;
+}
+tr.color{
+    color:#ccc;
+}
+.container .bottom{
+    height: 410px;
+    width: 100%;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.blk.item{
+    width:24.5%;
+    background: url("../assets/item3.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+}
+.progress{
+    width:100%;
+    height: 20px;
+    margin-top: 30px;
+    color:#16b7d9;
+}
+.progress:before{
+    content:'';
+    float: left;
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    background-color: #10ddd0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.opacity.progress:before{
+    display: none;
+}
+.progress .p-title{
+    float: left;
+    width:20%;
+    margin: 0 2%;
+}
+.progress .p-bar{
+    float: left;
+    position: relative;
+    width:50%;
+    height:100%;
+    background-color: #072055;
+    border-radius: 10px;
+}
+.opacity.progress .p-bar{
+    float: left;
+    width:50%;
+    height:100%;
+    background-color: transparent;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #106761;
+    box-shadow: 0px 0px 6px #07ada2 inset;
+}
+.opacity.progress .p-bar .p-inner{
+    float: left;
+    width:0;
+    margin-top: -1px;
+    height: 20px;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #10ddd0;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px #10ddd0 inset;
+}
+.p-bar .p-inner{
+    float: left;
+    position: absolute;
+    left:0;
+    top:0;
+    width:0;
+    height:100%;
+    background-color: #10ddd0;
+    border-radius: 10px;
+}
+.progress .p-value{
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+}
+.circle{
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    height: 20px;
+    width: 20px;
+    margin-right:14px;
+    border-radius: 20px;
+    background-color: #5d91dc;
+}

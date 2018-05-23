@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贵阳大屏</title>
+    <link  href="./css/guiyang.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="bg">
+        <div class="header">
+            <h1>传化智慧物流供应链平台</h1>
+            <div class="time">数据时间：<span id="time"></span></div>
+        </div>
+        <div class="container">
+            <div class="top clearfix">
+                <div class="blk item1">
+                    <div class="top-half">
+                        <p class="title">订单数量</p>
+                        <div class="data">
+                            <img src="./assets/text.png"/>
+                            <dl>
+                                <dt>累计订单量</dt>
+                                <dd>1,756,917</dd>
+                            </dl>
+                            <dl>
+                                <dt>本月新增</dt>
+                                <dd><span id="newData">-</span><span class="to-top">↑</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="bottom-half">
+                        <p class="title">月度订单趋势</p>
+                        <div id="chart1" class="chart"></div>
+                    </div>
+                </div>
+                <div class="blk item2">
+                    <div class="half">
+                        <div class="top-half">
+                            <p class="title">货物吞吐量</p>
+                            <div class="data">
+                                <img src="./assets/yunying.png"/>
+                                <dl>
+                                    <dt>总重量（万吨）</dt>
+                                    <dd>13,608</dd>
+                                </dl>
+                                <dl>
+                                    <dt>总体积（万方）</dt>
+                                    <dd>43,659</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="bottom-half">
+                            <div id="chart2" class="chart"></div>
+                        </div>
+                    </div>
+                    <div class="half" style="padding-left:40px;">
+                        <p class="title">实时运单数据</p>
+                        <div class="table">
+                            <table>
+                                <thead>
+                                <th>车牌</th><th>名称</th><th>件数</th><th>重量/吨</th><th>体积/立方</th>
+                                </thead>
+                            </table>
+                            <div id="table">
+                                <div id="table1">
+                                    <table id="tableData">
+                                    </table>
+                                </div>
+                                <div id="table2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="blk item">
+                    <div class="top-half">
+                        <p class="title">行业</p>
+                        <div class="data">
+                            <img src="./assets/hangye.png"/>
+                            <dl>
+                                <dt>主要行业覆盖</dt>
+                                <dd>45</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="bottom-half">
+                        <div id="chart3" class="chart"></div>
+                    </div>
+                </div>
+                <div class="blk item item4">
+                    <div class="top-half">
+                        <p class="title">客户服务</p>
+                        <div class="data">
+                            <img src="./assets/kehu.png"/>
+                            <dl>
+                                <dt>客户数量（个）</dt>
+                                <dd>5,162</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="bottom-half">
+                        <p class="title2">客户企业年营业额</p>
+                        <div id="chart4" class="chart"></div>
+                    </div>
+                </div>
+                <div class="blk item item5">
+                    <div class="top-half">
+                        <p class="title">供应商服务</p>
+                        <div class="data">
+                            <img src="./assets/cangku.png"/>
+                            <dl>
+                                <dt>供应商数量（个）</dt>
+                                <dd>9,757</dd>
+                            </dl>
+                            <dl>
+                                <dt>仓储面积（平方）</dt>
+                                <dd>600,000+</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="bottom-half">
+                        <p class="title2 title3">主要仓库分布/面积（平方）</p>
+                        <div id="chart5" class="chart"></div>
+                    </div>
+                </div>
+                <div class="blk item item6">
+                    <div class="top-half">
+                        <p class="title">运力车辆类型</p>
+                        <div class="data">
+                            <img src="./assets/car.png"/>
+                            <dl>
+                                <dt>车辆总量（辆）</dt>
+                                <dd>2,100,000+</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="bottom-half">
+                        <div id="chart6" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./utils/g.js"></script>
+    <script src="./lib/echarts/echarts.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        init();
+        window.onresize = function () {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
